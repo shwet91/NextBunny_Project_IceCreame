@@ -5,15 +5,17 @@ import Image from "next/image";
 import Waitlist from "@/components/nextbunny/waitlist";
 const TRUSTED_TECH = ["Next.js", "Tailwind CSS", "Framer", "React"];
 export default function Hero() {
-  return <motion.section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-[2rem] md:pt-[5rem]" initial={{
+  return <motion.section className=" relative min-h-screen flex flex-col items-center justify-center p1x-4 sm:pax-6 lg:p1x-8 pt-[2rem] md:pt-[5rem]" initial={{
     opacity: 0
   }} animate={{
     opacity: 1
   }} transition={{
     duration: 1
   }}>
-      <div className="text-center max-w-7xl mx-auto space-y-8 mt-[5rem]">
-        <motion.div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter space-y-2" initial={{
+
+    {/* <h1 className="absolute top-0" >Hello</h1> */}
+      <div className="text-center   ma1x-w-7xl mx-auto space-y-8 mt-0 relative ">
+        <motion.div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter space-y-2 " initial={{
         y: 20,
         opacity: 0
       }} animate={{
@@ -23,10 +25,31 @@ export default function Hero() {
         delay: 0.2,
         duration: 0.8
       }}>
+        <div className="  relative w-full rounded-lg  overflow-hidden bottom-8 sm:bottom-20 flex items-center justify-center ">
+
+          <video  className="w-full h-1/3"   autoPlay muted loop>
+          <source src="https://videos.pexels.com/video-files/4725766/4725766-hd_1920_1080_25fps.mp4" type="video/webm"/>
+          Your browser does not support the video tag.
+          </video>
+          <div className=" absolute top-1/3 sm:top-1/2  m-auto" > 
+          <h1 className="block text-derby-900 "  >Summer Just Got Sweeter! </h1>
+           <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary block " >
+           Blossum iceCream
+           </div>
+
+           </div>
+     
+          </div>
+
+          {/* <div className="  m-auto" >
+
+              
           <h1 className="block">Free Next.js drag and drop builder</h1>
           <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary block">
             launch 10x faster
           </div>
+
+          </div> */}
         </motion.div>
 
         <motion.p className="text-muted-foreground text-lg md:text-xl max-w-4xl mx-auto" initial={{
@@ -54,7 +77,7 @@ export default function Hero() {
         delay: 0.6,
         duration: 0.8
       }}>
-          <Waitlist />
+          {/* <Waitlist /> */}
         </motion.div>
       </div>
 
@@ -68,8 +91,16 @@ export default function Hero() {
       delay: 0.8,
       duration: 1
     }}>
-        <div className="relative w-full rounded-lg overflow-hidden">
-          <Image src="/images/nextbunny-hero-image.png" alt="NextBunny - Free Next.js Visual Page Builder Interface showing drag and drop functionality" width={1920} height={1080} className="object-cover rounded-lg shadow-2xl" priority />
+        <div className="relative w-full rounded-lg  overflow-hidden">
+          {/* <Image src="/images/nextbunny-hero-image.png" alt="NextBunny - Free Next.js Visual Page Builder Interface showing drag and drop functionality" width={1920} height={1080} className="object-cover rounded-lg shadow-2xl" priority /> */}
+
+          <video  className="w-full"   autoPlay muted loop>
+          {/* <source src="../../../public/images/vid1.mp4" type="video/mp4"/> */}
+          <source src="https://videos.pexels.com/video-files/5059599/5059599-uhd_2732_1440_30fps.mp4" type="video/webm"/>
+          Your browser does not support the video tag.
+          </video>
+
+
         </div>
 
         <div className="absolute -inset-x-20 -bottom-20 bg-gradient-to-t from-primary/20 to-transparent blur-3xl h-40" />
