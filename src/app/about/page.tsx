@@ -1,11 +1,12 @@
 import React from 'react'
 import {CarouselSize} from '@/components/nextbunny/Carousel'
+import AboutBody from '@/components/AboutBody'
 
 function page() {
   return (
-    <div className='mt-60 bg-black'>
-      Hello
-        <CarouselSize></CarouselSize>
+    <div className=' '>
+
+      <AboutBody></AboutBody>
     </div>
   )
 }
