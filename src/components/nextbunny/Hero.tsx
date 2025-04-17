@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Waitlist from "@/components/nextbunny/waitlist";
-const TRUSTED_TECH = ["Next.js", "Tailwind CSS", "Framer", "React"];
+import { CarouselSize } from "./Carousel";
+const TRUSTED_TECH = ["Best Sellers"];
 export default function Hero() {
   return <motion.section className=" relative min-h-screen flex flex-col items-center justify-center p1x-4 sm:pax-6 lg:p1x-8 pt-[2rem] md:pt-[5rem]" initial={{
     opacity: 0
@@ -62,9 +61,7 @@ export default function Hero() {
         delay: 0.4,
         duration: 0.8
       }}>
-          Design landing pages effortlessly with our no-code builder, featuring
-          ready-to-use react components built with Tailwind CSS, Shadcn UI, and
-          Framer Motion.
+         Churned to perfection, bursting with joy—one scoop is never enough
         </motion.p>
 
         <motion.div className="flex items-center justify-center gap-4" initial={{
@@ -81,7 +78,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <motion.div className="mt-8 w-full max-w-6xl mx-auto relative" initial={{
+      <motion.div className="mt-8 w-full max-w-6xl mx-auto relative  bg-gray-200 flex" initial={{
       y: 100,
       opacity: 0
     }} animate={{
@@ -91,22 +88,29 @@ export default function Hero() {
       delay: 0.8,
       duration: 1
     }}>
-        <div className="relative w-full rounded-lg  overflow-hidden">
+        <div className="relative sm:w-3/5 w-full rounded-tl-lg rounded-bl-lg  overflow-hidden ">
           {/* <Image src="/images/nextbunny-hero-image.png" alt="NextBunny - Free Next.js Visual Page Builder Interface showing drag and drop functionality" width={1920} height={1080} className="object-cover rounded-lg shadow-2xl" priority /> */}
 
-          <video  className="w-full"   autoPlay muted loop>
+          <video  className=""   autoPlay muted loop>
           {/* <source src="../../../public/images/vid1.mp4" type="video/mp4"/> */}
-          <source src="https://videos.pexels.com/video-files/5059599/5059599-uhd_2732_1440_30fps.mp4" type="video/webm"/>
+          <source src="/images/1.mp4" type="video/webm"/>
           Your browser does not support the video tag.
           </video>
 
 
         </div>
 
+        <div className="sm:w-full w-3/4 flex justify-center items-center flex-col p-4 " >
+          <h1 className="text-sm sm:text-6xl m-8 text-gray-800" >Scoop into Happiness</h1>
+          <p className="text-sm sm:text-xl text-muted-foreground">Every scoop tells a story—crafted with the finest ingredients and a whole lot of love.
+              From nostalgic classics to bold new creations, there’s a flavor for every craving.
+              So go ahead, treat yourself to a moment of pure, creamy happiness.</p>
+        </div>
+
         <div className="absolute -inset-x-20 -bottom-20 bg-gradient-to-t from-primary/20 to-transparent blur-3xl h-40" />
       </motion.div>
 
-      <motion.div className="mt-20 w-full max-w-4xl mx-auto" initial={{
+      <motion.div className="mt-20 w-full 1max-w-xl mx-auto" initial={{
       opacity: 0
     }} animate={{
       opacity: 1
@@ -115,7 +119,7 @@ export default function Hero() {
       duration: 0.8
     }}>
         <h2 className="text-center text-muted-foreground text-sm mb-8 uppercase">
-          Built with Technologies You Trust
+          Built with Your Trust
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
           {TRUSTED_TECH.map((tech, index) => <motion.div key={tech} initial={{
@@ -127,6 +131,7 @@ export default function Hero() {
         }} transition={{
           delay: 1.2 + index * 0.1
         }} className="relative group">
+
               <motion.div className="relative px-4 py-2 rounded-lg overflow-hidden" whileHover={{
             scale: 1.05
           }} transition={{
@@ -146,7 +151,7 @@ export default function Hero() {
                 damping: 17
               }
             }} />
-                <motion.span className="relative text-xl font-bold text-foreground block" whileHover={{
+                <motion.span className="relative text-4xl font-bold text-foreground block" whileHover={{
               y: -2,
               transition: {
                 type: "spring",
@@ -180,7 +185,19 @@ export default function Hero() {
             }
           }} />
             </motion.div>)}
+
+            <CarouselSize></CarouselSize>
+            <div className=" w-[80vw] flex flex-col justify-center items-center p-6 gap-8  h-64">
+              <h1 className="sm:text-6xl text-xl m-7" >Globally Sourced, Locally Loved!</h1>
+              <p className="text-sm sm:text-xl text-muted-foreground text-center" >No matter the season, having gelato does not need a reason. Whether it
+                is a hot summer day or a sunny winter afternoon, our range of products will add
+                 sweetness to your life!. What is better? The sweetness we bring is not sinful. Apart 
+                 from fresh ingredients, exotic flavours and zero preservatives, we also have vegan and sugar-free options.</p>
+             </div>
+
         </div>
+
+        
       </motion.div>
     </motion.section>;
 }
