@@ -51,7 +51,7 @@ export default function Hero() {
           </div> */}
         </motion.div>
 
-        <motion.p className="  text-center text-muted-foreground sm:text-lg md:text-xl max-w-4xl mx-auto p-6" initial={{
+        <motion.p className="  text-center text-muted-foreground sm:text-lg md:text-xl max-w-4xl mx-auto p-6 mr-6" initial={{
         y: 20,
         opacity: 0
       }} animate={{
@@ -61,7 +61,7 @@ export default function Hero() {
         delay: 0.4,
         duration: 0.8
       }}>
-        <h1 className="text-center mr-6" >Churned to perfection, bursting with joy one scoop is never enough</h1>
+        Churned to perfection, bursting with joy one scoop is never enough
          
         </motion.p>
 
@@ -104,7 +104,7 @@ export default function Hero() {
         <div className="sm:w-full w-3/4 flex justify-center items-center flex-col p-4 " >
           <h1 className="text-sm sm:text-6xl m-8 text-gray-800" >Scoop into Happiness</h1>
           <p className="text-sm sm:text-xl text-muted-foreground p-3">Every scoop tells a story—crafted with the finest ingredients and a whole lot of love.
-              From nostalgic classics to bold new creations, there’s a flavor for every craving.
+              From nostalgic classics to bold new creations, there s a flavor for every craving.
               </p>
         </div>
 

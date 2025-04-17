@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useTheme } from "next-themes";
 const navigationItems = [{
   name: "Home",
-  href: "/nextbunny-components"
+  href: "/"
 }, {
   name: "About",
   href: "/templates"
