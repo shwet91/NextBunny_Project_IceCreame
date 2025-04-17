@@ -1,5 +1,5 @@
 export default function Footer() {
-    return <footer className="relative py-24 border-t border-border bg-gray-900">
+    return <footer className="relative p-10 py-24 border-t border-border bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>

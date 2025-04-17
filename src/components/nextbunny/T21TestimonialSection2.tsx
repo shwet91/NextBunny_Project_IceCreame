@@ -45,11 +45,11 @@ export default function T21TestimonialSection2({
   return (
     <div className={className}>
       <div className="flex flex-col items-center justify-center pt-12">
-        <div className="flex flex-col gap-5 mb-8">
-          <h2 className="text-3xl text-center font-bold tracking-tight sm:text-4xl">
+        <div className="flex justify-center items-center flex-col gap-5 mb-8">
+          <h2 className="text-2xl flex justify-center  text-center font-bold tracking-tight m-3 mr-6 sm:text-4xl">
             {title}
           </h2>
-          <p className="text-center text-muted-foreground">
+          <p className="text-center text-muted-foreground mr-6">
             {description.split("<br />").map((line, i) => (
               <span key={i}>
                 {line}
@@ -74,7 +74,7 @@ export default function T21TestimonialSection2({
             .map((testimonial, index) => (
               <Card
                 key={index}
-                className="w-80 h-auto p-5 relative bg-card border-border"
+                className="w-80 h-auto p-5 mr-6 relative bg-card border-border"
               >
                 <div className="flex items-center">
                   <Image

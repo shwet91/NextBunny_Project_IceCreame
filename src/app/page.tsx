@@ -5,9 +5,9 @@ import Footer from "@/components/nextbunny/footer";
 
 export default function Home() {
   return (
-    <ScrollArea className="h-screen bg-derby-50 ">
+    <ScrollArea className="h-screen bg-derby-50  ">
       <Hero />
-      <T21TestimonialDemo2></T21TestimonialDemo2>
+      <T21TestimonialDemo2 ></T21TestimonialDemo2>
       <Footer></Footer>
     </ScrollArea>
   );
