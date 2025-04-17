@@ -5,7 +5,7 @@ function AboutBody() {
   return (
     <div>
         
-        <div className=' bg-violet-500 sm:100vw w-[100vw] sm:h-[100vh] h-[200vh] flex justify-evenly items-center sm:flex-row flex-col '>
+        <div className='  sm:100vw w-[100vw] sm:h-[100vh] h-[200vh] flex justify-evenly items-center sm:flex-row flex-col '>
               
               <div className=' relative w-4/5 h-2/6 sm:w-1/5 sm:h-3/5 rounded-lg overflow-hidden '>
                              <Image src={"https://i.pinimg.com/736x/fe/d4/4e/fed44eaf0fe02391645e4b12e4f2e683.jpg"} alt='Image owner' fill ></Image>
