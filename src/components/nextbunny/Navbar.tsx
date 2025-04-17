@@ -11,16 +11,13 @@ const navigationItems = [{
   href: "/"
 }, {
   name: "About",
-  href: "/templates"
+  href: "/about"
 }, {
   name: "Stores",
-  href: "/templates"
+  href: "/stores"
 }, {
   name: "Products",
-  href: "/templates"
-}, {
-  name: "Stories",
-  href: "/templates"
+  href: "/products"
 }];
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

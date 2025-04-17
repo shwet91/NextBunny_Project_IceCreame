@@ -3,6 +3,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from '@/components/nextbunny/Navbar';
 const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/nextbunny/footer";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +20,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
      
       <body className={inter.className}>
+      <ScrollArea className="h-screen bg-derby-50  ">
            <Navbar />
           {children}
-
-      
+          <Footer></Footer>
+          </ScrollArea>
       </body>
     </html>
   );
