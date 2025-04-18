@@ -1,8 +1,11 @@
 import React from 'react'
+import Stores from '@/components/Stores'
 
 function page() {
   return (
-    <div>Store</div>
+    <div>
+      <Stores></Stores>
+    </div>
   )
 }
 
