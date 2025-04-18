@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/images/2.png" alt="NextBunny Logo" width={32} height={32} />
+              <Image src="https://i.pinimg.com/736x/0d/12/b8/0d12b86934ec832c4b5f971e48b1a90c.jpg" alt="NextBunny Logo" width={32} height={32} />
               <span className="text-xl font-bold text-foreground">
                 Scoop Cream
               </span>
@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              {navigationItems.map(item => <Link key={item.name} href={item.href} className="text-foreground">
+              {navigationItems.map(item => <Link key={item.name} href={item.href} className="text-foreground hover:text-rose-600">
                   {item.name}
                 </Link>)}
               {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="mr-2">
@@ -48,7 +48,7 @@ export default function Navbar() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                   </svg>}
               </Button> */}
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground">
+              <Button className="bg-gradient-to-r  from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground">
                 <Link href="/projects">Contact Us</Link>
               </Button>
             </div>
