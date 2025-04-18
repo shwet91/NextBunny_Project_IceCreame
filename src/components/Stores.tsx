@@ -20,7 +20,7 @@ function Stores() {
 
                     This ice cream shop is one of the most popular spots in town.
                       Customers love the rich flavors and friendly atmosphere.
-                        It's a go-to destination for sweet treats and happy moments.
+                        It is a go-to destination for sweet treats and happy moments.
                     </p>
                 </div>
           </div>
@@ -36,8 +36,8 @@ function Stores() {
                     <p className='text-center text-xl font-sans  sm:text-xl text-muted-foreground p-10' >
                     4820 Ice Cream <br /> Lane, California <br /> , NV 89119 <br />
                         A beloved spot known for its creamy scoops and vibrant vibe.
-                       Locals and tourists can't get enough of the unique flavors.
-                       It’s the perfect chill-out place on a hot Vegas day.                  </p>
+                       Locals and tourists can not get enough of the unique flavors.
+                       It is the perfect chill-out place on a hot Vegas day.                  </p>
                 </div>
 
                 <div className=' hidden sm:block relative w-4/5 h-2/6 sm:w-1/5 sm:h-3/5 rounded-lg overflow-hidden mt-20'>
