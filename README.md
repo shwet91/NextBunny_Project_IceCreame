@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍦 Ice Cream Company Website
 
-## Getting Started
+A sleek and responsive UI-only website for an Ice Cream Company, built using **Next Bunny** – a library of pre-built, customizable components for modern web interfaces.
 
-First, run the development server:
+## ✨ Features
 
-```bash
+- Beautiful and responsive UI
+- Built entirely with [Next Bunny](https://nextbunny.vercel.app/)
+- Fast and lightweight
+- Clean code structure and reusable components
+- Fully static and frontend-only
+
+## 📸 Preview
+
+*Add a screenshot or live demo link here if available.*
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **UI Library:** [Next Bunny](https://nextbunny.vercel.app/)
+- **Styling:** Tailwind CSS (via Next Bunny)
+
+## 📁 Project Structure
+
+🚀 Getting Started
+Prerequisites
+Node.js (v16 or higher)
+
+npm or yarn
+
+Installation
+
+git clone https://github.com/your-username/ice-cream-ui.git
+cd ice-cream-ui
+npm install
+
+
+Run Locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📄 License
+This project is open source and free to use under the MIT License.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
